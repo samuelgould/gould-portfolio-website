@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 0 50px 0;
     background-color: #E7E6E1;
     font-family: 'Roboto', sans-serif;
 }
@@ -92,6 +92,19 @@ h3 {
     text-align: center;
 }
 
+.contact-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.contact-links {
+    text-decoration: none;
+    color: #384956;
+    font-weight: bold;
+}
+
 .desktop {
     display: none;
 }
@@ -123,7 +136,7 @@ h3 {
         width: 30%;
     }
 
-    .text-block {
+    .homepage-text {
         position: absolute;
         top: 25px;
         left: 55px;
