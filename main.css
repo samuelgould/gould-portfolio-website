@@ -44,6 +44,8 @@ nav {
 
 .name {
     font-size: 36px;
+    font-weight: bold;
+    color: #537791;
 }
 
 a {
@@ -91,10 +93,16 @@ h2 {
 }
 
 h3 {
-    color: #384956;
+    color: #537791;
     text-align: center;
     font-size: 30px;
     margin: 15px;
+    transition: color .5s ease;
+}
+
+h3:hover {
+    color: #384956;
+    font-weight: bolder;
 }
 
 .snapshot-container {
@@ -114,9 +122,9 @@ h3 {
 
 .more-info-container {
     display: flex;
-    width: 40%;
+    width: 60%;
     justify-content: space-around;
-    margin: auto;
+    margin: 10px auto 25px auto;
 }
 
 .about-image-container {
@@ -125,14 +133,26 @@ h3 {
 
 .contact-container {
     display: flex;
-    width: 70%;
+    width: 90%;
     justify-content: space-around;
     margin: auto;
 }
 
 .links {
     font-size: 24px;
+    color: #537791;
+    font-weight: bold;
+    transition: color .5s ease;
+}
+
+.links:hover {
     color: #384956;
+    font-weight: bolder;
+}
+
+.divider {
+    font-size: 24px;
+    color: #537791;
     font-weight: bold;
 }
 
@@ -209,7 +229,7 @@ h3 {
     }
 
     .portfolio-content {
-        margin: 25px;
+        margin: 25 25 0 25;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -223,18 +243,19 @@ h3 {
         margin-left: 25px;
     }
 
+    .congress-container {
+        flex-direction: row-reverse;
+    }
+
     .more-info-container {
         width: 25%;
+        margin-top: 0px;
     }
 
     .about-image-container {
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-
-    .contact-container {
-        width: 50%;
     }
 }
 
