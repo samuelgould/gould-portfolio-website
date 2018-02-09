@@ -10,7 +10,10 @@ body {
 }
 
 nav {
-    height: 60px;
+    width: 100%;
+    top: 0px;
+}    
+.nav {
     margin: 10px;
     display: flex;
     flex-direction: row-reverse;
@@ -71,6 +74,7 @@ img {
 
 p {
     margin: 0px 15px;
+    line-height: 1.5;
     font-size: 16px;
     text-align: left;
     color: #384956;
@@ -94,7 +98,7 @@ h3 {
 
 .contact-container {
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: space-around;
     margin: auto;
 }
@@ -103,6 +107,10 @@ h3 {
     text-decoration: none;
     color: #384956;
     font-weight: bold;
+}
+
+.logo {
+    width: 50px;
 }
 
 .desktop {
@@ -117,11 +125,19 @@ h3 {
     .desktop {
         display: block;
     }
-    
+
     .background {
-        background: url("https://i.imgur.com/X5FzDhC.jpg");
-        background-size: 1100px;
+        height: 700px;
+        width:1200px;
+        background: url('https://i.imgur.com/X5FzDhC.jpg');
         background-repeat: no-repeat;
+        background-size: 100%;
+        -webkit-mask-image: -webkit-linear-gradient(top, rgba(247,246,231,1), rgba(247,246,231,0));
+    }
+
+    .homepage {
+        position: relative;
+        top: -600px;
     }
 
     .title {
@@ -152,6 +168,10 @@ h3 {
     }
 
     nav {
+        position: fixed;
+    }
+
+    .nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -172,12 +192,13 @@ h3 {
         justify-content: space-around;
         align-items: center;
     }
+
+    .contact-container {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 1100px) {
-    .background {
-        background-size: 1400px;
-    }
 
     .titles-container {
         width: 450px;
