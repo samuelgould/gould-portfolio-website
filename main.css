@@ -16,10 +16,6 @@ nav {
 
 .nav {
     margin: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .hamburger {
@@ -50,6 +46,11 @@ nav {
 
 a {
     text-decoration: none;
+}
+
+a:focus {
+    color: #384956;
+    font-weight: bolder;
 }
 
 .sub-heading {
@@ -93,16 +94,11 @@ h2 {
 }
 
 h3 {
-    color: #537791;
+    color: #384956;
     text-align: center;
     font-size: 30px;
     margin: 15px;
     transition: color .5s ease;
-}
-
-h3:hover {
-    color: #384956;
-    font-weight: bolder;
 }
 
 .snapshot-container {
@@ -138,6 +134,16 @@ h3:hover {
     margin: auto;
 }
 
+.email-address {
+    color: #537791;
+    transition: color .5s ease;
+}
+
+.email-address:hover {
+    color: #384956;
+    font-weight: bold;
+}
+
 .links {
     font-size: 24px;
     color: #537791;
@@ -154,10 +160,6 @@ h3:hover {
     font-size: 24px;
     color: #537791;
     font-weight: bold;
-}
-
-.logo {
-    width: 50px;
 }
 
 .desktop {
