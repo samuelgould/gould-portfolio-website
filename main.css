@@ -12,7 +12,8 @@ body {
 nav {
     width: 100%;
     top: 0px;
-}    
+}
+
 .nav {
     margin: 10px;
     display: flex;
@@ -45,12 +46,15 @@ nav {
     font-size: 36px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .sub-heading {
     font-size: 24px;
 }
 
 .title {
-    text-decoration: none;
     font-weight: bold;
     color: #537791;
 }
@@ -90,6 +94,29 @@ h3 {
     color: #384956;
     text-align: center;
     font-size: 30px;
+    margin: 15px;
+}
+
+.snapshot-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-snapshot {
+    margin: 25px 0px;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #C1C0B9;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #C1C0B9;
+}
+
+.more-info-container {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .about-image-container {
@@ -103,8 +130,8 @@ h3 {
     margin: auto;
 }
 
-.contact-links {
-    text-decoration: none;
+.links {
+    font-size: 24px;
     color: #384956;
     font-weight: bold;
 }
@@ -137,7 +164,7 @@ h3 {
 
     .homepage {
         position: relative;
-        top: -600px;
+        top: -700px;
     }
 
     .title {
@@ -146,6 +173,7 @@ h3 {
 
     .title:hover {
         color: #384956;
+        font-weight: bolder;
     }
 
     img {
@@ -167,42 +195,51 @@ h3 {
         width: 400px;
     }
 
-    nav {
-        position: fixed;
-    }
-
     .nav {
+        position: relative;
+        top: -700px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    .desktop-hide {
-        display: none;
-    }
-
     section {
         position: relative;
     }
 
+    .portfolio-content {
+        margin: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .portfolio-text {
+        width: 45%;
+    }
+
+    .congress {
+        margin-left: 25px;
+    }
+
+    .more-info-container {
+        width: 25%;
+    }
+
     .about-image-container {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
 
     .contact-container {
-        width: 70%;
+        width: 50%;
     }
 }
 
 @media screen and (min-width: 1100px) {
-
     .titles-container {
         width: 450px;
     }
-
-
 }
