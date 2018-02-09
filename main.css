@@ -177,7 +177,7 @@ h3 {
 
     .background {
         height: 700px;
-        width:1200px;
+        width: 1200px;
         background: url('https://i.imgur.com/X5FzDhC.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -270,7 +270,7 @@ h3 {
 @media screen and (min-width: 1200px) {
     .background {
         height: 933px;
-        width:1600px;
+        width: 1600px;
         background: url('https://i.imgur.com/X5FzDhC.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
