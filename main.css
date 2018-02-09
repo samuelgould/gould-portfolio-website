@@ -266,3 +266,30 @@ h3 {
         width: 450px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .background {
+        height: 933px;
+        width:1600px;
+        background: url('https://i.imgur.com/X5FzDhC.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        -webkit-mask-image: -webkit-linear-gradient(top, rgba(247,246,231,1), rgba(247,246,231,0));
+    }
+
+    .nav {
+        top: -933px;
+        margin: 20px;
+    }
+
+    .homepage {
+        top: -875px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px;
+        margin: auto;
+    }
+}
