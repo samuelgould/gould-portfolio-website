@@ -56,7 +56,6 @@ img {
 
 .text-block {
     margin: auto;
-    width: 80%;
 }
 
 p {
@@ -180,6 +179,10 @@ h3 {
 
     img {
         width: 30%;
+    }
+
+    .text-block {
+        width: 80%;
     }
 
     .homepage-text {
